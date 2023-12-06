@@ -1,7 +1,13 @@
 package com.akos.vamos.MyApplication;
 
-public class Car {
+import jakarta.persistence.Entity;
+import jakarta.persistence.GeneratedValue;
+import jakarta.persistence.Id;
 
+@Entity
+public class Car {
+    @Id
+    @GeneratedValue
     private int id;
     private String number;
     private String type;
