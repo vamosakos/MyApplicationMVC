@@ -1,5 +1,7 @@
-package com.akos.vamos.MyApplication;
+package com.akos.vamos.MyApplication.service;
 
+import com.akos.vamos.MyApplication.entity.Car;
+import com.akos.vamos.MyApplication.repository.CarRepository;
 import jakarta.persistence.EntityNotFoundException;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
@@ -7,7 +9,7 @@ import org.springframework.stereotype.Service;
 import java.util.Optional;
 
 @Service
-public class CarServiceImpl implements CarService{
+public class CarServiceImpl implements CarService {
 
     private final CarRepository carRepository;
     @Autowired

@@ -1,21 +1,20 @@
-package com.akos.vamos.MyApplication;
+package com.akos.vamos.MyApplication.controller;
 
+import com.akos.vamos.MyApplication.entity.Car;
+import com.akos.vamos.MyApplication.service.CarService;
 import jakarta.persistence.EntityNotFoundException;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
-import java.util.List;
-import java.util.Optional;
-
 @RestController
 @RequestMapping("/car")
-public class RestApi {
+public class CarController {
 
     private final CarService carService;
     @Autowired
-    public RestApi(CarService carService) {
+    public CarController(CarService carService) {
         this.carService = carService;
     }
 

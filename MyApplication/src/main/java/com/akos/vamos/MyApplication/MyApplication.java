@@ -1,5 +1,6 @@
 package com.akos.vamos.MyApplication;
 
+import com.akos.vamos.MyApplication.entity.Car;
 import com.google.gson.Gson;
 import org.springframework.boot.CommandLineRunner;
 import org.springframework.boot.SpringApplication;
