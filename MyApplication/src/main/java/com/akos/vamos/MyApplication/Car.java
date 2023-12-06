@@ -30,4 +30,13 @@ public class Car {
         this.number = number;
         this.type = type;
     }
+
+    @Override
+    public String toString() {
+        return "Car{" +
+                "id=" + id +
+                ", number='" + number + '\'' +
+                ", type='" + type + '\'' +
+                '}';
+    }
 }
